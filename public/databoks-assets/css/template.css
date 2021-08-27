@@ -1,0 +1,143 @@
+body {
+    max-width: 99%;;
+}
+
+.header {
+    padding: 15px 70px 15px 70px;
+}
+
+.logo-head {
+    text-align: left;
+}
+
+.form-group {
+    position: relative;
+    border-color: #818386;
+    box-shadow: 0 0 0 0.2rem #818386;
+}
+
+#search-form {
+    padding-right: 50px;
+    background: lighten(black, 97%);
+    border-radius: 0px;
+}
+
+#search-form:focus {
+    border-color: #818386;
+    box-shadow: 0 0 0 0.2rem #818386;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.menu-head {
+    text-align: right;
+}
+
+#main {
+    min-height: 75vh;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 15px 70px 15px 70px;
+    background: #083D77;
+}
+
+.logo-footer-group {
+    padding: 15px 15px 15px 15px;
+}
+
+.logo-footer-group div {
+    align-self: center;
+}
+
+.logo-bottom {
+    text-align: right;
+}
+
+.logo-media-network img {
+    width: 126px;
+}
+
+.logo-bottom img {
+    width: 160px;
+}
+
+.htag {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: inherit;
+    line-height: inherit;
+    display: inline-block;
+}
+
+.htag a {
+    color: #f8f9fa;
+}
+
+.htag a:hover {
+    color: #f8f9fa;
+}
+
+.htag .nav-link {
+    padding-right: 8px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.htag-separator {
+    padding-right: 8px;
+    padding-left: 0px;
+    color: #f8f9fa;
+}
+
+.htag-socmed-group {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.footer-socmed {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.icon-logo {
+    color: -webkit-link;
+}
+
+.icon-logo:hover {
+    color: -webkit-link;
+}
+
+.footer-bottom {
+    padding: 15px 70px 15px 70px;
+    background: #F4EFFF;
+}
+
+.footer-bottom .htag a {
+    font-size: 13px;
+    color: #666666;
+}
+
+.footer-bottom .htag a:hover {
+    color: #666666;
+}
+
+.footer-copyright .htag {
+    font-size: 13px;
+    color: #666666;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+section {
+    margin-bottom: 50px;
+}
