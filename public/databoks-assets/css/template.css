@@ -52,11 +52,13 @@ body {
     padding: 15px 15px 15px 15px;
 }
 
-.logo-footer-group div {
+.logo-footer-group div,
+.load-more {
     align-self: center;
 }
 
-.logo-bottom {
+.logo-bottom,
+.share-logo {
     text-align: right;
 }
 
@@ -140,4 +142,48 @@ body {
 
 section {
     margin-bottom: 50px;
+}
+
+.pd-container .pd-title {
+    color: #F9AF19;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.2;
+    word-spacing: 3px;
+  }
+  .pd-container .pd-row1 {
+    margin-top: 35px;
+  }
+  .pd-container .col-group {
+    padding: 0px;
+  }
+  .pd-container .pd-area {
+    margin-top: 20px;
+  }
+   .pd-container .pd-rec {
+    padding: 0px;
+    height: 205px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .pd-container .pd-rec img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+   .pd-container .pd-des {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .pd-sq-des h2 {
+      font-size: 20px;
+  }
+
+  .pd-sq-des p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #818386;
+    font-weight: 600;
 }
