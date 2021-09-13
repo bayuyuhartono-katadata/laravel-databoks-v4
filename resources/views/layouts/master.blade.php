@@ -22,7 +22,7 @@
         @include('layouts.header')
     </header>
     @stack('home-sliders')
-    <div class="container">
+    <div class="">
         <div id="main" class="">
             @yield('content')
         </div>

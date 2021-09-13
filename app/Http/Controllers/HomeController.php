@@ -22,6 +22,16 @@ class HomeController extends Controller
         return view('detail.index');
     }
 
+    public function fortyfour()
+    {
+        return view('fortyfour.index');
+    }
+
+    public function kanalIndustri()
+    {
+        return view('kanalIndustri.index');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
