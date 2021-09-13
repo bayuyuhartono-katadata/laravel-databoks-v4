@@ -1,5 +1,6 @@
 body {
-    max-width: 99%;;
+    max-width: 99%;
+    ;
 }
 
 .header {
@@ -150,40 +151,86 @@ section {
     font-size: 30px;
     line-height: 1.2;
     word-spacing: 3px;
-  }
-  .pd-container .pd-row1 {
+}
+
+.pd-container .pd-row1 {
     margin-top: 35px;
-  }
-  .pd-container .col-group {
+}
+
+.pd-container .col-group {
     padding: 0px;
-  }
-  .pd-container .pd-area {
+}
+
+.pd-container .pd-area {
     margin-top: 20px;
-  }
-   .pd-container .pd-rec {
+}
+
+.pd-container .pd-rec {
     padding: 0px;
     height: 205px;
     width: 100%;
     margin-bottom: 10px;
-  }
-  .pd-container .pd-rec img {
+}
+
+.pd-container .pd-rec img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
-  }
-   .pd-container .pd-des {
+}
+
+.pd-container .pd-des {
     margin-top: 10px;
     margin-bottom: 25px;
-  }
+}
 
-  .pd-sq-des h2 {
-      font-size: 20px;
-  }
+.pd-sq-des h2 {
+    font-size: 20px;
+}
 
-  .pd-sq-des p {
+.pd-sq-des p {
     font-size: 12px;
     margin-bottom: 0px;
     color: #818386;
     font-weight: 600;
+}
+
+.topik-icon {
+    text-align: center;
+}
+
+.topik-icon img {
+    width: 100%;
+}
+
+.topik-icon-title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.testimonial-avatar {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.testimonial-name {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.testimonial-sq-name p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #818386;
+    font-weight: 600;
+}
+
+.testimonial-sq-name .name {
+    font-weight: 800;
+    color: #333333;
+}
+
+.socmed-title {
+    margin-top: 20px;
 }

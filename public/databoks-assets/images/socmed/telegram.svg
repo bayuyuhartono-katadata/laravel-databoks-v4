@@ -1,0 +1,31 @@
+<svg id="Component_16_1" data-name="Component 16 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.15" height="36.15" viewBox="0 0 36.15 36.15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #c2daec;
+      }
+
+      .cls-3 {
+        fill: #9fcde2;
+      }
+
+      .cls-4 {
+        fill: #ecf8fd;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.146" y1="0.146" x2="0.854" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00afe5"/>
+      <stop offset="1" stop-color="#0094d4"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_63" data-name="Ellipse 63" class="cls-1" cx="18.075" cy="18.075" r="18.075"/>
+  <g id="Group_14606" data-name="Group 14606" transform="translate(7.088 10.14)">
+    <path id="Path_4940" data-name="Path 4940" class="cls-2" d="M126.737,134.007l2.08,5.64,9.23-12.819Z" transform="translate(-121.733 -124.624)"/>
+    <path id="Path_4941" data-name="Path 4941" class="cls-3" d="M135.772,162.169l-.2,4.444,4.871-4.131Z" transform="translate(-128.46 -151.532)"/>
+    <path id="Path_4942" data-name="Path 4942" class="cls-4" d="M124.332,117.628l-18.191,6.912a.586.586,0,0,0,.021,1.1l4.691,1.585,10.683-6.894-8.461,7.891,6.586,5a1.2,1.2,0,0,0,1.888-.664l3.56-14.241A.586.586,0,0,0,124.332,117.628Z" transform="translate(-105.763 -117.588)"/>
+  </g>
+</svg>
