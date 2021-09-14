@@ -32,6 +32,11 @@ class HomeController extends Controller
         return view('kanalIndustri.index');
     }
 
+    public function argoindustri()
+    {
+        return view('argoindustri.index');
+    }
+
     public function search()
     {
         return view('search.index');

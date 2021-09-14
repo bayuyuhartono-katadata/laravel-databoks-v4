@@ -227,6 +227,20 @@
 
     .pd-container .pd-rec {
         height: 140px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .search-top {
+        padding: 0px 25px;
+    }
+
+    .search-top .form-group {
+        position: relative;
+    }
+
+    .search-top p {
+        font-size: 13px;
+        margin-bottom: 10px;
     }
     
 </style>
@@ -236,8 +250,26 @@
     <div class="row">
         <div class="col-md-8 content-detail">
 
-
             <div class="terkini list">
+                <div class="search-top row">
+                    <div class="col-12">
+                        <p>200 search Result for:</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="form-group">
+                            <span class="icon fa fa-search"></span>
+                            <input type="text" class="form-control" id="search-form">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <select class="js-example-basic-single form-control" name="state" id="search-form">
+                                <option value="AL">Date</option>
+                                <option value="WY">Relevansi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <div class='container pd-container'>
                     <div class='row pd-row1'>
                         @for ($i = 0; $i < 12; $i++)
@@ -245,7 +277,7 @@
                                 <div class="col-4">
                                     <a href='#'>
                                         <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                                src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
+                                                src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
                                             <figcaption>
         
                                             </figcaption>
@@ -283,7 +315,7 @@
                         @for ($i = 0; $i < 5; $i++) 
                             <a href="#" class="col-3">
                                 <div class="data-populer-img">
-                                    <img src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg'/>
+                                    <img src='{{ asset('databoks-assets/other/sample-thumb.svg') }}'/>
                                     <div class="after"></div>
                                 </div>
                             </a>

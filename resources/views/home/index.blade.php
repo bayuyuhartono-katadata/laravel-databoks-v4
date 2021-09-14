@@ -64,21 +64,16 @@
         border-bottom: 8px solid #DD8E3F;
     }
 
-    .loadmore {
-        text-align: center;
-        margin-top: 30px
+    .seemore {
+        text-align: right;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #DD8E3F;
     }
 
-    .loadmore-button {
-        border: 2px solid #DD8E3F;
-        background: #DD8E3F;
-        color: white;
-        padding: 10px 50px;
-        display: inline-block;
-        font-size: 17px;
-        transition: 0.3s;
+    .hr-line {
+        display: none;
     }
-    
 </style>
 @endpush
 @section('content')
@@ -117,44 +112,184 @@
         <div class="terkini list">
             <div class='container pd-container'>
                 <div class='row pd-row1'>
-                    @for ($i = 0; $i < 12; $i++)
-                        
-                        <div class='pd-area col-md-4'>
-                            <a href='#'>
-                                <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                        src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
-                                    <figcaption>
+                    @for ($i = 0; $i < 12; $i++) <div class='pd-area col-md-4'>
+                        <a href='#'>
+                            <div class='effect-bubba pd-rec'><img class='img-reponsive'
+                                    src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
+                                <figcaption>
 
-                                    </figcaption>
+                                </figcaption>
+                            </div>
+                        </a>
+                        <div class='pd-des pd-sq-des'>
+                            <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p>INTERNASIONAL</p>
+                                    <p>26/04/2021 14.18 WIB</p>
                                 </div>
-                            </a>
-                            <div class='pd-des pd-sq-des'>
-                                <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
-                                <div class="row">
-                                    <div class="col-9">
-                                        <p>INTERNASIONAL</p>
-                                        <p>26/04/2021 14.18 WIB</p>
-                                    </div>
-                                    <div class="col-3 share-logo">
-                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
-                                    </div>
-                                </div>                            
+                                <div class="col-3 share-logo">
+                                    <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                                </div>
                             </div>
                         </div>
-
-                    @endfor
-
                 </div>
+
+                @endfor
+
             </div>
-            <div class="loadmore">
-                <button class="loadmore-button">Muat lebih banyak</button>
-            </div>
+        </div>
+        <div class="loadmore">
+            <button class="loadmore-button">Muat lebih banyak</button>
         </div>
     </section>
 
     <section class="section-topik">
         <h3 class="subtitle">TOPIK PILIHAN</h3>
+        <div class="topik list">
+            <div class='container pd-container'>
+                <div class='row'>
+
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Migas.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Migas</p>
+                        </div>
+                    </div>
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Digital.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Digital</p>
+                        </div>
+                    </div>
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Demografi.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Demografi</p>
+                        </div>
+                    </div>
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Moneter.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Moneter</p>
+                        </div>
+                    </div>
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Fintech.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Fintech</p>
+                        </div>
+                    </div>
+                    <div class='pd-area col-md-2'>
+                        <a href='#'>
+                            <div class='topik-icon'>
+                                <img src="{{ asset('databoks-assets/other/Energi.svg') }}">
+                            </div>
+                        </a>
+                        <div class='topik-icon-title'>
+                            <p>Energi</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row pd-row1">
+                <a href='#' class="seemore">Seluruh topik >></a>
+            </div>
+        </div>
     </section>
+
+    <section class="section-populer">
+        <h3 class="subtitle">DATA POPULER</h3>
+        <div class="populer list">
+            <div class='container pd-container'>
+                <div class='row pd-row1'>
+                    @for ($i = 0; $i < 3; $i++) <div class='pd-area col-md-4'>
+                        <a href='#'>
+                            <div class='effect-bubba pd-rec'><img class='img-reponsive'
+                                    src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
+                                <figcaption>
+
+                                </figcaption>
+                            </div>
+                        </a>
+                        <div class='pd-des pd-sq-des'>
+                            <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p>INTERNASIONAL</p>
+                                    <p>26/04/2021 14.18 WIB</p>
+                                </div>
+                                <div class="col-3 share-logo">
+                                    <a href="#">
+                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                @endfor
+
+            </div>
+        </div>
+</div>
+</section>
+
+<section class="section-testimonial">
+    <h3 class="subtitle">TESTIMONIAL</h3>
+    <div class="testimonial list">
+        <div class='container pd-container'>
+            <div class='row pd-row1'>
+                @for ($i = 0; $i < 3; $i++) <div class='pd-area col-md-4'>
+                    <div class="row">
+                        <div class='col-3'>
+                            <img class="testimonial-avatar"
+                                src="https://image.flaticon.com/icons/png/512/168/168726.png">
+                        </div>
+                        <div class='col-9'>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                sed diam voluptua.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-name testimonial-sq-name">
+                        <div class="row">
+                            <div class='col-3'></div>
+                            <div class='col-9'>
+                                <p class="name">Jane Doe</p>
+                                <p>Jabatan Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            @endfor
+
+        </div>
+    </div>
+    </div>
+</section>
 </div>
 @stop
 

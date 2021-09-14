@@ -343,7 +343,7 @@
                         @for ($i = 0; $i < 5; $i++) 
                             <a href="#" class="col-3">
                                 <div class="data-populer-img">
-                                    <img src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg'/>
+                                    <img src='{{ asset('databoks-assets/other/sample-thumb.svg') }}'/>
                                     <div class="after"></div>
                                 </div>
                             </a>
@@ -382,7 +382,7 @@
                         <div class='pd-area col-md-4'>
                             <a href='#'>
                                 <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                        src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
+                                        src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
                                     <figcaption>
         
                                     </figcaption>

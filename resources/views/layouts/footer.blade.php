@@ -1,4 +1,5 @@
-<div class="row footer">
+<div class="footer-line"></div>
+<div class="footer">
     <div class="row logo-footer-group">
         <div class="col-sm-3 logo-media-network">
             <img class="img-responsive" src="{{ asset('databoks-assets/images/katadata-media-network.svg') }}">
@@ -56,7 +57,7 @@
     </div>
 </div>
 
-<div class="row footer-bottom">
+<div class="footer-bottom">
     <div class="row htag-bottom-group">
         <div class="col-sm-8 footer-link">
             <h4 class="htag"><a class="nav-link" href="https://katadata.co.id">Tentang Databoks</a></h4>

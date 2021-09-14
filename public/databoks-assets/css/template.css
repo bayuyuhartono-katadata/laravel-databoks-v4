@@ -11,7 +11,7 @@ body {
     text-align: left;
 }
 
-.form-group {
+.search-head .form-group {
     position: relative;
     border-color: #818386;
     box-shadow: 0 0 0 0.2rem #818386;
@@ -233,4 +233,28 @@ section {
 
 .socmed-title {
     margin-top: 20px;
+}
+
+.hr-line {
+    margin-top: 5px;
+}
+
+.loadmore {
+    text-align: center;
+    margin-top: 30px
+}
+
+.loadmore-button {
+    border: 2px solid #DD8E3F;
+    background: #DD8E3F;
+    color: white;
+    padding: 10px 50px;
+    display: inline-block;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.footer-line {
+    background: #DD8E3F;
+    height: 10px;
 }
