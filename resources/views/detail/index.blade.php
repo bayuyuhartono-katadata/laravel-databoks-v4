@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @push('styles')
 <style>
-
     .download {
         text-align: right;
     }
@@ -84,6 +83,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .related-head {
         font-weight: bold;
         color: #ffffff;
@@ -94,7 +94,7 @@
         color: #ffffff;
     }
 
-    .terkait-button {
+    .tags-button {
         border-radius: 23px;
         border: 2px solid #CCCCCC;
         background: #dddddd;
@@ -104,7 +104,7 @@
         transition: 0.3s;
     }
 
-    .terkait-button:hover {
+    .tags-button:hover {
         background: #CCCCCC;
     }
 
@@ -118,16 +118,109 @@
 
     .separator-content {
         margin-top: 50px;
+        margin-bottom: 25px;
     }
 
-    .section-data-populer {
-
-    }
+    .section-data-populer {}
 
     .section-data-populer h3 {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .data-populer-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .data-populer-img img {
+        width: 100%;
+    }
+
+    .data-populer-img .after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgba(221, 142, 63, 0.6);
+    }
+    .data-populer-img:hover .after {
+        display: none;
+        color: #FFF;
+    }
+
+    .data-populer-time {
+        color: #666666;
+        font-size: 10px;
+    }
+
+    .data-populer-text {
+        padding: 0px;
+        margin: 0px;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 0px;
+    }
+
+    .data-populer-desc {
+        text-decoration: none;
+        color: #000000;
+        padding: 0px;
+    }
+
+    .section-data-trending {}
+
+    .section-data-trending h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .data-trending {
+        margin: 10px 0px;
+    }
+
+    .data-trending button {
+        font-size: 16PX;
+        padding: 5px 20px;
+        margin-top: 5px;
+        margin-right: 5px;
+        width: auto;
+    }
+
+    .trending-button {
+        border-radius: 23px;
+        border: 2px solid #CCCCCC;
+        background: #dddddd;
+        padding: 5px 20px;
+        display: inline-block;
+        font-size: 12px;
+        transition: 0.3s;
+    }
+
+    .trending-button:hover {
+        background: #CCCCCC;
+    }
+
+    .section-terkait {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .section-terkait h3 {
+        font-size: 18px;
         font-weight: bold;
     }
+
+    .dt-container {
+        padding: 0px;
+    }
+
+    
 </style>
 @endpush
 @section('content')
@@ -211,7 +304,8 @@
 
                         <div class="related-news">
                             <p class="related-head">BACA JUGA</p>
-                            <a class="related-content">Cha Eunwoo Dimanja Calon Ayah Mertua Di ‘True Beauty’, Fans: Pedekate Jalur Gercep</a>
+                            <a class="related-content">Cha Eunwoo Dimanja Calon Ayah Mertua Di ‘True Beauty’, Fans: Pedekate
+                                Jalur Gercep</a>
                         </div>
 
                         <p class="content-pr">
@@ -229,11 +323,11 @@
                     </div>
 
                     <div class="section-tags">
-                    <p class="tags-icon fas fa-tag">&nbsp; Tags: </p>
-                    &nbsp;
-                    <button class="terkait-button">Lorem Ipsum</button>
-                    <button class="terkait-button">Dolor sit amet</button>
-                    <button class="terkait-button">Investasi Asing</button>
+                        <p class="tags-icon fas fa-tag">&nbsp; Tags: </p>
+                        &nbsp;
+                        <button class="tags-button">Lorem Ipsum</button>
+                        <button class="tags-button">Dolor sit amet</button>
+                        <button class="tags-button">Investasi Asing</button>
                     </div>
 
                 </div>
@@ -244,10 +338,76 @@
         <div class="col-md-4">
             <div class="section-data-populer">
                 <h3>DATA POPULER</h3>
+                <div class="data-populer-content">
+                    <div class="row">
+                        @for ($i = 0; $i < 5; $i++) 
+                            <a href="#" class="col-3">
+                                <div class="data-populer-img">
+                                    <img src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg'/>
+                                    <div class="after"></div>
+                                </div>
+                            </a>
+                            <a href="#" class="col-9 data-populer-desc">
+                                <p class="data-populer-text">Kabupaten Rembang Punya 176 Desa Ramah Anak</p>
+                                <p class="data-populer-time far fa-clock">&nbsp; 17 Mar 2021</p>
+                            </a>
+                            @endfor
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-data-trending">
+                <h3>DATA TRENDING</h3>
+                <div class="row data-trending">
+                    <button class="trending-button">Lorem Ipsum</button>
+                    <button class="trending-button">Dolor sit amet</button>
+                    <button class="trending-button">Investasi Asing</button>
+                    <button class="trending-button">Investasi Asing</button>
+                    <button class="trending-button">Dolor sit amet</button>
+                    <button class="trending-button">Lorem Ipsum</button>
+                </div>
 
             </div>
         </div>
+
         <hr class="separator-content">
+
+        <section class="section-terkait">
+            <h3 class="subtitle">DATA TERKAIT</h3>
+            <div class="terkait list">
+                <div class='container pd-container dt-container'>
+                    <div class='row'>
+                        @for ($i = 0; $i < 6; $i++) 
+                        <div class='pd-area col-md-4'>
+                            <a href='#'>
+                                <div class='effect-bubba pd-rec'><img class='img-reponsive'
+                                        src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
+                                    <figcaption>
+        
+                                    </figcaption>
+                                </div>
+                            </a>
+                            <div class='pd-des pd-sq-des'>
+                                <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>INTERNASIONAL</p>
+                                        <p>26/04/2021 14.18 WIB</p>
+                                    </div>
+                                    <div class="col-3 share-logo">
+                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                    @endfor
+        
+                </div>
+            </div>
+            </div>
+        </section>
     </div>
 </div>
 @stop
