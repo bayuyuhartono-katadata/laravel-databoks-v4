@@ -37,6 +37,11 @@ class HomeController extends Controller
         return view('argoindustri.index');
     }
 
+    public function tags()
+    {
+        return view('tags.index');
+    }
+
     public function search()
     {
         return view('search.index');
