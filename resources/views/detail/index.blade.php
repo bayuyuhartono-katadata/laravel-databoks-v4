@@ -131,125 +131,125 @@
 </style>
 @endpush
 @section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 content-detail">
 
-<div class="row">
-    <div class="col-md-8 content-detail">
-
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <p class="fa fa-home"></p>
-                </li>
-                <li class="breadcrumb-item"><a href="#" class="bc-link">Kategori/Topik</a></li>
-                <li class="breadcrumb-item active" aria-current="page"> Inilah 10 Negara Termiskin…</li>
-            </ol>
-        </nav>
-        <h1>Inilah 10 Negara Termiskin di Dunia pada 2021</h1>
-        <div class="row socmed-title">
-            <div class="col-sm-9">
-                <div class="icons">
-                    <a class="icon-logo htag" target="_blank" href="https://www.facebook.com/katadatacoid/">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/facebook.svg') }}">
-                    </a>
-                    <a class="icon-logo htag" target="_blank" href="https://www.twitter.com/katadatacoid/">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/twitter.svg') }}">
-                    </a>
-                    <a class="icon-logo htag" target="_blank" href="">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/whatsapp.svg') }}">
-                    </a>
-                    <a class="icon-logo htag" target="_blank" href="">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/line.svg') }}">
-                    </a>
-                    <a class="icon-logo htag" target="_blank" href="">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/telegram.svg') }}">
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="download">
-                    <button class="download-button">Download &nbsp; <span class="fa fa-arrow-down"></span></button>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <div>
-            <p>Negara dengan Tingkat Kemiskinan Tertinggi</p>
-            <p class="sumber">Sumber: World Bank</p>
-        </div>
-        <div>
-            <img class="chart-detail" src="{{ asset('databoks-assets/other/sample-chart.png') }}">
-        </div>
-
-        <div class="content-text">
-            <div class="row">
-                <div class="col-3">
-                    <hr>
-                    <div class="row">
-                        <div class="col-3 writer-avatar-col">
-                            <img class="writer-avatar" src="https://image.flaticon.com/icons/png/512/168/168726.png">
-                        </div>
-                        <div class="col-9">
-                            <p class="writer-name">Oleh <b class="writer-name-bold">Agustiani</b></p>
-                            <p class="writer-time far fa-clock">&nbsp; 17 Mar 2021</p>
-                        </div>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <p class="fa fa-home"></p>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#" class="bc-link">Kategori/Topik</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"> Inilah 10 Negara Termiskin…</li>
+                </ol>
+            </nav>
+            <h1>Inilah 10 Negara Termiskin di Dunia pada 2021</h1>
+            <div class="row socmed-title">
+                <div class="col-sm-9">
+                    <div class="icons">
+                        <a class="icon-logo htag" target="_blank" href="https://www.facebook.com/katadatacoid/">
+                            <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/facebook.svg') }}">
+                        </a>
+                        <a class="icon-logo htag" target="_blank" href="https://www.twitter.com/katadatacoid/">
+                            <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/twitter.svg') }}">
+                        </a>
+                        <a class="icon-logo htag" target="_blank" href="">
+                            <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/whatsapp.svg') }}">
+                        </a>
+                        <a class="icon-logo htag" target="_blank" href="">
+                            <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/line.svg') }}">
+                        </a>
+                        <a class="icon-logo htag" target="_blank" href="">
+                            <img class="img-responsive" src="{{ asset('databoks-assets/images/socmed/telegram.svg') }}">
+                        </a>
                     </div>
                 </div>
-                <div class="content-dt">
-                    <p class="content-pr">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        <br><br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam erat, sed diam voluptua.
-                        <br><br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
+                <div class="col-sm-3">
+                    <div class="download">
+                        <button class="download-button">Download &nbsp; <span class="fa fa-arrow-down"></span></button>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="related-news">
-                        <p class="related-head">BACA JUGA</p>
-                        <a class="related-content">Cha Eunwoo Dimanja Calon Ayah Mertua Di ‘True Beauty’, Fans: Pedekate Jalur Gercep</a>
+            <hr>
+            <div>
+                <p>Negara dengan Tingkat Kemiskinan Tertinggi</p>
+                <p class="sumber">Sumber: World Bank</p>
+            </div>
+            <div>
+                <img class="chart-detail" src="{{ asset('databoks-assets/other/sample-chart.png') }}">
+            </div>
+
+            <div class="content-text">
+                <div class="row">
+                    <div class="col-3">
+                        <hr>
+                        <div class="row">
+                            <div class="col-3 writer-avatar-col">
+                                <img class="writer-avatar" src="https://image.flaticon.com/icons/png/512/168/168726.png">
+                            </div>
+                            <div class="col-9">
+                                <p class="writer-name">Oleh <b class="writer-name-bold">Agustiani</b></p>
+                                <p class="writer-time far fa-clock">&nbsp; 17 Mar 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-dt">
+                        <p class="content-pr">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            <br><br>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            aliquyam erat, sed diam voluptua.
+                            <br><br>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+
+                        <div class="related-news">
+                            <p class="related-head">BACA JUGA</p>
+                            <a class="related-content">Cha Eunwoo Dimanja Calon Ayah Mertua Di ‘True Beauty’, Fans: Pedekate Jalur Gercep</a>
+                        </div>
+
+                        <p class="content-pr">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            <br><br>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            aliquyam erat, sed diam voluptua.
+                            <br><br>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
 
-                    <p class="content-pr">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        <br><br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        aliquyam erat, sed diam voluptua.
-                        <br><br>
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                        takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
+                    <div class="section-tags">
+                    <p class="tags-icon fas fa-tag">&nbsp; Tags: </p>
+                    &nbsp;
+                    <button class="terkait-button">Lorem Ipsum</button>
+                    <button class="terkait-button">Dolor sit amet</button>
+                    <button class="terkait-button">Investasi Asing</button>
+                    </div>
 
-                <div class="section-tags">
-                <p class="tags-icon fas fa-tag">&nbsp; Tags: </p>
-                &nbsp;
-                <button class="terkait-button">Lorem Ipsum</button>
-                <button class="terkait-button">Dolor sit amet</button>
-                <button class="terkait-button">Investasi Asing</button>
                 </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="section-data-populer">
+                <h3>DATA POPULER</h3>
 
             </div>
         </div>
-
+        <hr class="separator-content">
     </div>
-
-    <div class="col-md-4">
-        <div class="section-data-populer">
-            <h3>DATA POPULER</h3>
-
-        </div>
-    </div>
-    <hr class="separator-content">
 </div>
-
 @stop
 
 @push('scripts')

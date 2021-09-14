@@ -5,4 +5,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index');
 Route::get('/detail', 'HomeController@detail');
 Route::get('/fortyfour', 'HomeController@fortyfour');
-Route::get('/kanalIndustri', 'HomeController@kanalIndustri');
+Route::get('/kanalindustri', 'HomeController@kanalIndustri');

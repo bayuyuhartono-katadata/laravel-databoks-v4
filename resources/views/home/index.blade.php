@@ -88,73 +88,74 @@
     @include('home.slider')
 </section>
 @endpush
+<div class="container">
+    <section class="section-trending">
+        <h3 class="subtitle">DATA TRENDING</h3>
+        <button class="trending-button">Covid 19</button>
+        <button class="trending-button active">Negara Termiskin</button>
+        <button class="trending-button">Lorem Ipsum</button>
+        <button class="trending-button">Dolor sit amet</button>
+        <button class="trending-button">Investasi Asing</button>
+        <button class="trending-button">Lorem Ipsum</button>
+        <button class="trending-button">Dolor sit amet</button>
+        <button class="trending-button">Investasi Lokal</button>
+    </section>
 
-<section class="section-trending">
-    <h3 class="subtitle">DATA TRENDING</h3>
-    <button class="trending-button">Covid 19</button>
-    <button class="trending-button active">Negara Termiskin</button>
-    <button class="trending-button">Lorem Ipsum</button>
-    <button class="trending-button">Dolor sit amet</button>
-    <button class="trending-button">Investasi Asing</button>
-    <button class="trending-button">Lorem Ipsum</button>
-    <button class="trending-button">Dolor sit amet</button>
-    <button class="trending-button">Investasi Lokal</button>
-</section>
+    <section class="section-terkini">
+        <h3 class="subtitle">DATA TERKINI</h3>
+        <div class="terkini-wrap">
+            <button class="terkini-button active">Semua Topik</button>
+            <button class="terkini-button">Demografi</button>
+            <button class="terkini-button">Moneter</button>
+            <button class="terkini-button">Keuangan</button>
+            <button class="terkini-button">PDB</button>
+            <button class="terkini-button">Energi</button>
+            <button class="terkini-button">Perdagangan</button>
+            <button class="terkini-button">Properti</button>
+            <button class="terkini-button">Pasar</button>
+        </div>
+        <div class="terkini list">
+            <div class='container pd-container'>
+                <div class='row pd-row1'>
+                    @for ($i = 0; $i < 12; $i++)
+                        
+                        <div class='pd-area col-md-4'>
+                            <a href='#'>
+                                <div class='effect-bubba pd-rec'><img class='img-reponsive'
+                                        src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
+                                    <figcaption>
 
-<section class="section-terkini">
-    <h3 class="subtitle">DATA TERKINI</h3>
-    <div class="terkini-wrap">
-        <button class="terkini-button active">Semua Topik</button>
-        <button class="terkini-button">Demografi</button>
-        <button class="terkini-button">Moneter</button>
-        <button class="terkini-button">Keuangan</button>
-        <button class="terkini-button">PDB</button>
-        <button class="terkini-button">Energi</button>
-        <button class="terkini-button">Perdagangan</button>
-        <button class="terkini-button">Properti</button>
-        <button class="terkini-button">Pasar</button>
-    </div>
-    <div class="terkini list">
-        <div class='container pd-container'>
-            <div class='row pd-row1'>
-                @for ($i = 0; $i < 12; $i++)
-                    
-                    <div class='pd-area col-md-4'>
-                        <a href='#'>
-                            <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                    src='http://www.pulatech.com/wp-content/uploads/2015/11/mobile-apps.jpg' />
-                                <figcaption>
-
-                                </figcaption>
+                                    </figcaption>
+                                </div>
+                            </a>
+                            <div class='pd-des pd-sq-des'>
+                                <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>INTERNASIONAL</p>
+                                        <p>26/04/2021 14.18 WIB</p>
+                                    </div>
+                                    <div class="col-3 share-logo">
+                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                                    </div>
+                                </div>                            
                             </div>
-                        </a>
-                        <div class='pd-des pd-sq-des'>
-                            <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
-                            <div class="row">
-                                <div class="col-9">
-                                    <p>INTERNASIONAL</p>
-                                    <p>26/04/2021 14.18 WIB</p>
-                                </div>
-                                <div class="col-3 share-logo">
-                                    <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
-                                </div>
-                            </div>                            
                         </div>
-                    </div>
 
-                @endfor
+                    @endfor
 
+                </div>
+            </div>
+            <div class="loadmore">
+                <button class="loadmore-button">Muat lebih banyak</button>
             </div>
         </div>
-        <div class="loadmore">
-            <button class="loadmore-button">Muat lebih banyak</button>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section-topik">
-    <h3 class="subtitle">TOPIK PILIHAN</h3>
-</section>
+    <section class="section-topik">
+        <h3 class="subtitle">TOPIK PILIHAN</h3>
+    </section>
+</div>
 @stop
 
 @push('scripts')
