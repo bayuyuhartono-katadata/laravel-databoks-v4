@@ -112,31 +112,32 @@
         <div class="terkini list">
             <div class='container pd-container'>
                 <div class='row pd-row1'>
-                    @for ($i = 0; $i < 12; $i++) <div class='pd-area col-md-4'>
-                        <a href='#'>
-                            <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                    src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
-                                <figcaption>
+                    @foreach ($listterkini as $item)
+                        
+                        <div class='pd-area col-md-4'>
+                            <a href='#'>
+                                <div class='effect-bubba pd-rec'><img class='img-reponsive'
+                                        src='https://cdn1.katadata.co.id/media/chart_thumbnail/{{ $item->id }}-{{ $item->slug }}.png' />
+                                    <figcaption>
 
-                                </figcaption>
-                            </div>
-                        </a>
-                        <div class='pd-des pd-sq-des'>
-                            <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
-                            <div class="row">
-                                <div class="col-9">
-                                    <p>INTERNASIONAL</p>
-                                    <p>26/04/2021 14.18 WIB</p>
+                                    </figcaption>
                                 </div>
-                                <div class="col-3 share-logo">
-                                    <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                            </a>
+                            <div class='pd-des pd-sq-des'>
+                                <h2>{{ $item->nama }}</h2>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p>INTERNASIONAL</p>
+                                        <p>{{ date('d/m/Y, h.m', strtotime($item->date_published )) }} WIB</p>
+                                    </div>
+                                    <div class="col-3 share-logo">
+                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>
 
-                @endfor
-
+                    @endforeach
             </div>
         </div>
         <div class="loadmore">
@@ -224,37 +225,35 @@
         <div class="populer list">
             <div class='container pd-container'>
                 <div class='row pd-row1'>
-                    @for ($i = 0; $i < 3; $i++) <div class='pd-area col-md-4'>
+                    @foreach ($listterpopuler as $item)
+
+                    <div class='pd-area col-md-4'>
                         <a href='#'>
                             <div class='effect-bubba pd-rec'><img class='img-reponsive'
-                                    src='{{ asset('databoks-assets/other/sample-thumb.svg') }}' />
+                                    src='https://cdn1.katadata.co.id/media/chart_thumbnail/{{ $item->id }}-{{ $item->slug }}.png' />
                                 <figcaption>
 
                                 </figcaption>
                             </div>
                         </a>
                         <div class='pd-des pd-sq-des'>
-                            <h2>Inilah 10 Negara Termiskin di Dunia pada 2021</h2>
+                            <h2>{{ $item->nama }}</h2>
                             <div class="row">
                                 <div class="col-9">
                                     <p>INTERNASIONAL</p>
-                                    <p>26/04/2021 14.18 WIB</p>
+                                    <p>{{ date('d/m/Y, h.m', strtotime($item->date_published )) }} WIB</p>
                                 </div>
                                 <div class="col-3 share-logo">
-                                    <a href="#">
-                                        <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
-                                    </a>
+                                    <img class="img-responsive" src="{{ asset('databoks-assets/images/share.svg') }}">
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    @endforeach
                 </div>
-
-                @endfor
-
             </div>
-        </div>
-</div>
-</section>
+    </section>
 
 <section class="section-testimonial">
     <h3 class="subtitle">TESTIMONIAL</h3>

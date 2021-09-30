@@ -121,36 +121,24 @@
     <span class="control_next"><img class="img-responsive" src="{{ asset('databoks-assets/other/angle-right.svg') }}"></span>
     <span class="control_prev"><img class="img-responsive" src="{{ asset('databoks-assets/other/angle-left.svg') }}"></span> 
     <ul>
-        <li>
-            <div class="container">
-                <div class="row slide-content">
-                    <div class="col-sm-5 slide-description">
-                        <h2>Inilah Negara Termiskin di Dunia pada 2021</h2>
-                        <h3>Sudan Selatan menjadi negara dengan tingkat kemiskinan tertinggi di dunia pada 2021. </h3>
-                        <h3 class="wilayah">INTERNASIONAL</h3>
-                        <h3 class="date-created">26/4/2019, 14.18 WIB</h3>
-                    </div>
-                    <div class="col-sm-7 slide-thumbnail">
-                        <img class="img-responsive" src="{{ asset('databoks-assets/other/sample-thumbnail.svg') }}">
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="container">
-                <div class="row slide-content">
-                    <div class="col-sm-5 slide-description">
-                        <h2>Hello World</h2>
-                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </h3>
-                        <h3 class="wilayah">LOKAL</h3>
-                        <h3 class="date-created">21/4/2019, 13.28 WIB</h3>
-                    </div>
-                    <div class="col-sm-7 slide-thumbnail">
-                        <img class="img-responsive" src="https://cdn1.katadata.co.id/media/chart_thumbnail/122323-kasus-covid-19-bertambah-19106-kasus-selasa-248.png?v=1629848244">
+        @foreach ($slider as $item)
+            <li>
+                <div class="container">
+                    <div class="row slide-content">
+                        <div class="col-sm-5 slide-description">
+                            <h2>{{ $item->nama }}</h2>
+                            <h3>{{ $item->summary }}</h3>
+                            <h3 class="wilayah">INTERNASIONAL</h3>
+                            <h3 class="date-created">{{ date('d/m/Y, h.m', strtotime($item->date_published )) }} WIB</h3>
+                            {{-- <h3 class="date-created">26/4/2019, 14.18 WIB</h3> --}}
+                        </div>
+                        <div class="col-sm-7 slide-thumbnail">
+                            <img class="img-responsive" src="https://cdn1.katadata.co.id/media/chart_thumbnail/{{ $item->id }}-{{ $item->slug }}.png">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </li>
+            </li>
+        @endforeach
     </ul>
 </div>
 

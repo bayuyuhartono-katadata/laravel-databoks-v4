@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Home;
+use App\Model\DatapublishModel;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +14,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.index');
+        $result['slider'] = DatapublishModel::listSlider()->get();
+        $result['listterkini'] = DatapublishModel::listTerkini()->get();
+        $result['listterpopuler'] = DatapublishModel::listTerpopuler()->get();
+        return view('home.index', $result);
     }
 
     public function detail()
