@@ -115,7 +115,7 @@
                     @foreach ($listterkini as $item)
                         
                         <div class='pd-area col-md-4'>
-                            <a href='#'>
+                            <a href='detail/{{ $item->slug }}'>
                                 <div class='effect-bubba pd-rec'><img class='img-reponsive'
                                         src='https://cdn1.katadata.co.id/media/chart_thumbnail/{{ $item->id }}-{{ $item->slug }}.png' />
                                     <figcaption>

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\DatapublishModel;
 use Illuminate\Http\Request;
+use App\Model\DatapublishModel;
 
 class HomeController extends Controller
 {

@@ -234,10 +234,10 @@
                         <p class="fa fa-home"></p>
                     </li>
                     <li class="breadcrumb-item"><a href="#" class="bc-link">Kategori/Topik</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"> Inilah 10 Negara Termiskin…</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $data->nama }}</li>
                 </ol>
             </nav>
-            <h1>Inilah 10 Negara Termiskin di Dunia pada 2021</h1>
+            <h1>{{ $data->nama }}</h1>
             <div class="row socmed-title">
                 <div class="col-sm-9">
                     <div class="icons">
@@ -271,7 +271,8 @@
                 <p class="sumber">Sumber: World Bank</p>
             </div>
             <div>
-                <img class="chart-detail" src="{{ asset('databoks-assets/other/sample-chart.png') }}">
+                {{-- <img class="chart-detail" src="{{ asset('databoks-assets/other/sample-chart.png') }}"> --}}
+                {!! $chartContent !!}
             </div>
 
             <div class="content-text">
@@ -289,37 +290,7 @@
                         </div>
                     </div>
                     <div class="content-dt">
-                        <p class="content-pr">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                            <br><br>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                            aliquyam erat, sed diam voluptua.
-                            <br><br>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
-
-                        <div class="related-news">
-                            <p class="related-head">BACA JUGA</p>
-                            <a class="related-content">Cha Eunwoo Dimanja Calon Ayah Mertua Di ‘True Beauty’, Fans: Pedekate
-                                Jalur Gercep</a>
-                        </div>
-
-                        <p class="content-pr">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                            <br><br>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                            aliquyam erat, sed diam voluptua.
-                            <br><br>
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                            takimata sanctus est Lorem ipsum dolor sit amet.
-                        </p>
+                        {!! $data->description_published !!}
                     </div>
 
                     <div class="section-tags">

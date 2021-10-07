@@ -262,3 +262,8 @@ section {
 .breadcrumb {
     margin-bottom: 0rem;
 }
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}

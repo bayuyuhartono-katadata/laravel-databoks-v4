@@ -28,4 +28,15 @@ class DatapublishModel extends Model
             ->orderBy('date_published', 'asc')
             ->limit(3);
     }
+
+    public function scopeDetailContent($query, $id, $slug)
+    {
+        if ($id != '') {
+            return $query->where('id', $id)
+            ->orderBy('date_published', 'asc');
+        } else {
+            return $query->where('slug', $slug)
+                ->orderBy('date_published', 'asc');
+        }
+    }
 }
