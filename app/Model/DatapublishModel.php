@@ -33,10 +33,12 @@ class DatapublishModel extends Model
     {
         if ($id != '') {
             return $query->where('id', $id)
+            ->where('status', 1)
             ->orderBy('date_published', 'asc');
         } else {
             return $query->where('slug', $slug)
-                ->orderBy('date_published', 'asc');
+            ->where('status', 1)
+            ->orderBy('date_published', 'asc');
         }
     }
 }
