@@ -41,33 +41,11 @@
         series.tooltip.label.textAlign = "middle";
         series.tooltip.label.textValign = "middle";
 
-        // Make bullets grow on hover
-        var bullet = series.bullets.push(new am4charts.CircleBullet());
-        bullet.circle.strokeWidth = 2;
-        bullet.circle.radius = 4;
-        bullet.circle.fill = am4core.color("#fff");
-
-        var bullethover = bullet.states.create("hover");
-        bullethover.properties.scale = 1.3;
-
-        // Make a panning cursor
+        // Add cursor
         chart.cursor = new am4charts.XYCursor();
-        chart.cursor.behavior = "panXY";
-        chart.cursor.xAxis = dateAxis;
-        chart.cursor.snapToSeries = series;
 
-        // Create vertical scrollbar and place it before the value axis
-        chart.scrollbarY = new am4core.Scrollbar();
-        chart.scrollbarY.parent = chart.leftAxesContainer;
-        chart.scrollbarY.toBack();
-
-        // Create a horizontal scrollbar with previe and place it underneath the date axis
-        chart.scrollbarX = new am4charts.XYChartScrollbar();
-        chart.scrollbarX.series.push(series);
-        chart.scrollbarX.parent = chart.bottomAxesContainer;
-
-        dateAxis.start = 0.79;
-        dateAxis.keepSelection = true;
+        // Add legend
+        chart.legend = new am4charts.Legend();
 
 
     }); // end am4core.ready()
