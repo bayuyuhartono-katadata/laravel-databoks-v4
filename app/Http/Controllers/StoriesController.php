@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Model\DatapublishModel;
 use App\Model\SlugHistoryModel;
 use App\Model\RelDataStatistikModel;
+use App\Model\RelDataSingleModel;
 use App\Model\DataModel;
 
 class StoriesController extends Controller
@@ -15,9 +16,15 @@ class StoriesController extends Controller
         $slugHistory= SlugHistoryModel::getIdSlugHistory($slug)->first();
         $idSlugHistory = isset( $slugHistory['id_datastatistik'])? $slugHistory['id_datastatistik']:'';
         $detailContent = DatapublishModel::detailContent($idSlugHistory,$slug)->first(); 
-        $result['data'] = $detailContent; 
-        $result['chartContent'] = $this->getChart($detailContent);        
-        
+        if ($detailContent->tipe_data == 1) {
+            $result['data'] = $detailContent; 
+            $result['chartContent'] = $this->getChart($detailContent); 
+        } else if ($detailContent->tipe == 2) {
+            $result['data'] = $detailContent; 
+            $result['chartContent'] = $this->getChartGroup($detailContent); 
+        }
+               
+        // return $result;
         return view('detail.index', $result);
     }
 
@@ -46,6 +53,65 @@ class StoriesController extends Controller
         }
         
         return $result;   
+    }
+
+    public function getChartGroup($detailContent)
+    {
+        switch ($detailContent->tipe_chart) {
+            case '1':
+                $result = $this->barChartGroup($detailContent);
+                break;
+
+            case '4':
+                $result = $this->stackedChartGroup($detailContent);
+                break;
+            
+            default:
+                $result = $this->lineChart($detailContent);
+                break;
+        }
+        
+        return $result;   
+    }
+
+    public function barChartGroup($detailContent)
+    {
+        $relDataStatistik = RelDataSingleModel::relData($detailContent->id)->get();
+        $data_x = explode(",",$detailContent->nama_alias); 
+        foreach ($data_x as $key => $value) {
+            $chartConsume[$key]['name'] = $data_x[$key];
+            $data_y = explode(",",$relDataStatistik[$key]['data_y']);
+            $nama_data_alias = explode(",",$relDataStatistik[$key]['nama_data_alias']);
+            foreach ($nama_data_alias as $key_y => $value_y) {
+                $chartConsume[$key][$value_y] = $data_y[$key_y];
+            }
+        }
+
+        // return $chartConsume;
+        
+        $result = view('detail.chartGroupBar', ['chartConsume' => $chartConsume]);
+
+        return $result;
+    }
+
+    public function stackedChartGroup($detailContent)
+    {
+        $relDataStatistik = RelDataSingleModel::relData($detailContent->id)->get();
+        $data_x = explode(",",$detailContent->nama_alias); 
+        foreach ($data_x as $key => $value) {
+            $chartConsume[$key]['name'] = $data_x[$key];
+            $data_y = explode(",",$relDataStatistik[$key]['data_y']);
+            $nama_data_alias = explode(",",$relDataStatistik[$key]['nama_data_alias']);
+            foreach ($nama_data_alias as $key_y => $value_y) {
+                $chartConsume[$key][$value_y] = $data_y[$key_y];
+            }
+        }
+
+        // return $chartConsume;
+        
+        $result = view('detail.chartGroupStacked', ['chartConsume' => $chartConsume]);
+
+        return $result;
     }
 
     public function lineChart($detailContent)
